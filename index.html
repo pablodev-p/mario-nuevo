@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mario bros</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <div class="caja-video"><!--video comienza automatico, en silenncio y repetitivo-->
+    <video src="./video.mp4" autoplay muted loop></video>
+    <div class="cajadecolor"></div>
+  </div>
+
+
+  <div class="primera-caja">
+
+    <div class="caja-encabezado">
+      <img class="cabeza" src="./logo-header.png" alt="cabeza mario">
+
+
+      <a>Home</a>
+      <a>Fale Conosco</a>
+      <a>nossos serviços</a>
+    </div>
+
+    <br>
+
+    <img class="logo" src="./logo.png" alt="logo mario">
+    <p>
+      🔧 Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo! 🔧
+    </p>
+    <p>
+      Você já se encontrou em uma situação de emergência com encanamento? <br>
+      Vazamentos inesperados, canos entupidos ou torneiras que não param de pingar? <br>
+      Não se preocupe, porque estamos aqui para salvar o dia!<br>
+      Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
+    </p>
+
+    <button onclick="botonclicado()" class="botondecontacto"> entre em contato</button>
+
+  </div>
+
+  <div class="segunda-caja">
+    <img class="imgmario" src="./mario.png">
+
+    <a href="api.whatsapp.com"><!--link generado para mi whatsapp con "gerador de link para whatsapp"-->
+      <img class="imgwhatsapp" src="./whatsapp.png">
+     
+    </a>
+
+  </div>
+
+  <div onclick="ocultarmascara()" class="mascara-de-formulario"></div>
+
+
+  <section class="container">
+    <form id="formulario-a-llenar" 
+    action="API-DE-FORMCARRY" 
+    method="POST"
+      enctype="xxxxx">
+
+      <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="name" id="nombre" placeholder="teu nome" />
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="teu-correio@gmail.com" />
+      </div>
+
+      <div>
+        <label for="message">Mensaje</label>
+        <textarea name="message" id="message" placeholder="fala teu problema..."></textarea>
+      </div>
+
+      <div>
+        <button class="boton-de-formulario" type="submit">Enviar</button>
+      </div>
+
+    </form>
+  </section>
+
+
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
